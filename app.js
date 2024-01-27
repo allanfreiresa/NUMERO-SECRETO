@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 50;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -18,7 +18,7 @@ function exibirMensagemInicial() {
 exibirMensagemInicial();
 
 function verificarChute() {
-    let chute = document.querySelector('input').value;
+    let chute = document.querySelector('input').value; 
     
     if (chute == numeroSecreto) {
         exibirTextoNaTela('h1', 'Acertou!');
